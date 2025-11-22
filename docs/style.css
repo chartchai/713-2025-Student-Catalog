@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6;
+    /* Light gray background */
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    color: #1f2937;
+    /* Dark gray text */
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 40px 32px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: center;
+    background: linear-gradient(to right, #ffffff, #f9fafb);
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 800;
+    color: #111827;
+    letter-spacing: -0.02em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.student-table th {
+    background-color: #f9fafb;
+    /* Very light gray for header */
+    color: #6b7280;
+    /* Muted text */
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 16px 32px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.student-table td {
+    padding: 16px 32px;
+    border-bottom: 1px solid #f3f4f6;
+    vertical-align: middle;
+    color: #374151;
+}
+
+.student-table tbody tr {
+    background-color: #ffffff;
+    transition: background-color 0.2s;
+}
+
+/* Zebra striping - Gray and White rows */
+.student-table tbody tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+.student-table tbody tr:hover {
+    background-color: #f3f4f6;
+}
+
+.avatar-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #e5e7eb;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .student-table thead {
+        display: none;
+    }
+
+    .student-table,
+    .student-table tbody,
+    .student-table tr,
+    .student-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .student-table tr {
+        margin-bottom: 16px;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .student-table td {
+        padding: 12px 20px;
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+        border-bottom: none;
+    }
+
+    .student-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 20px;
+        width: 45%;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: 500;
+        color: #6b7280;
+    }
+
+    .avatar-cell {
+        text-align: right;
+    }
+}
