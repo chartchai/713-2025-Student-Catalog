@@ -1,0 +1,28 @@
+{
+  "name": "713-2025-student-catalog",
+  "version": "1.0.0",
+  "description": "This is a simple, responsive web template for listing students. It is designed to be hosted on GitHub Pages.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chartchai/713-2025-Student-Catalog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chartchai/713-2025-Student-Catalog/issues"
+  },
+  "homepage": "https://github.com/chartchai/713-2025-Student-Catalog#readme",
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
